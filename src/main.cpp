@@ -69,11 +69,11 @@ int main() {
 
   // 编码格式为YUYV422
   capture.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('Y', 'U', 'Y', 'V'));
-  // 宽度<=1280
+  // 宽度 <= 1280
   capture.set(cv::CAP_PROP_FRAME_WIDTH, 1280);
-  // 高度<=720
+  // 高度 <= 720
   capture.set(cv::CAP_PROP_FRAME_HEIGHT, 720);
-  // 帧率为 30
+  // 帧率 <= 30
   capture.set(cv::CAP_PROP_FPS, 30);
 
   cv::Mat frame, edges, gray, lines;
